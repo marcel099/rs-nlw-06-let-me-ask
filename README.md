@@ -16,6 +16,7 @@
 * [Índice](#índice)
 * [Sobre](#sobre)
   * [Tecnologias](#principais-tecnologias-utilizadas)
+* [Instalação local](#instalação-local)
 * [Licença](#licença)
 
 ## Sobre
@@ -35,6 +36,10 @@ O sistema foi desenvolvido em TypeScript. É composto de 2 partes:
   - [React](https://react.dev/)
 
 O maior diferencial deste projeto é o uso do [Firebase](https://firebase.google.com/), um Back-End como Serviço.
+
+## Instalação local
+
+Passos para atingir isso podem ser conferidos <a href="./INSTALLATION.md">neste arquivo</a>.
 
 ## Licença
 
