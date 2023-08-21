@@ -15,11 +15,26 @@
 
 * [Índice](#índice)
 * [Sobre](#sobre)
+  * [Tecnologias](#principais-tecnologias-utilizadas)
 * [Licença](#licença)
 
 ## Sobre
 
 O projeto foi desenvolvido na trilha React da sexta edição do evento Next Level Week, edição também chamada de NLW Together, proporcionado pela empresa [Rocketseat](https://rocketseat.com.br/). Baseou-se em um layout elaborado no Figma.
+
+O sistema, desenvolvido em TypeScript, é composto de um [site](https://ecoleta.marcel099.vercel.app/) em React e um Back-End como Serviço no [Firebase](https://firebase.google.com/).
+
+### Principais tecnologias utilizadas
+
+O sistema foi desenvolvido em TypeScript. É composto de 2 partes:
+
+- Back-End
+  - [Firebase](https://firebase.google.com/) - [Authentication](https://firebase.google.com/docs/auth) e [Realtime Database](https://firebase.google.com/docs/database)
+- Front-End Web
+  - [Next](https://nextjs.org/)
+  - [React](https://react.dev/)
+
+O maior diferencial deste projeto é o uso do [Firebase](https://firebase.google.com/), um Back-End como Serviço.
 
 ## Licença
 
