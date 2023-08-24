@@ -21,18 +21,22 @@ export function NewRoom() {
   async function handleCreateRoom(e: FormEvent) {
     e.preventDefault()
 
-    if (newRoom.trim() === '') {
-      return
+    try {
+      if (newRoom.trim() === '' && user === undefined) {
+        return
+      }
+  
+      const roomRef = database.ref('rooms')
+  
+      const firebaseRoom = await roomRef.push({
+        title: newRoom,
+        authorId: user?.id
+      })
+  
+      history.push(`/rooms/${firebaseRoom.key}`)
+    } catch (error) {
+      alert('Erro ao criar sala')
     }
-
-    const roomRef = database.ref('rooms')
-
-    const firebaseRoom = await roomRef.push({
-      title: newRoom,
-      authorId: user?.id
-    })
-
-    history.push(`/rooms/${firebaseRoom.key}`)
   }
 
   return (

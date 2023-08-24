@@ -22,11 +22,15 @@ export function Home() {
   const [roomCode, setRoomCode] = useState('')
   
   async function handleCreateRoom() {
-    if (!user) {
-      await signInWithGoogle()
+    try {
+      if (!user) {
+        await signInWithGoogle()
+      }
+  
+      history.push('/rooms/new')
+    } catch (error) {
+      alert('Erro ao realizar login')
     }
-
-    history.push('/rooms/new')
   }
 
   async function handleJoinRoom(e: FormEvent) {
@@ -74,7 +78,9 @@ export function Home() {
             <img src={googleIconImg} alt="Logo do Google" />
             Crie sua sala com o Google
           </button>
-          <div className="separator">ou entre em uma sala</div>
+          {/* <button onClick={handleSignOut}> */}
+            <div className="separator">ou entre em uma sala</div>
+          {/* </button> */}
           <form onSubmit={handleJoinRoom}>
             <input
               type="text"
