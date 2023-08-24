@@ -42,7 +42,7 @@ export function AuthContextProvider({ children }: AuthContextProviderProps) {
         })
       }
     })
-  }, [user])
+  }, [])
 
   async function signInWithGoogle() {
     const provider = new firebase.auth.GoogleAuthProvider();
