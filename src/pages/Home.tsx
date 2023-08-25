@@ -17,7 +17,7 @@ import '../styles/auth.scss'
 
 export function Home() {
   const history = useHistory();
-  const { user, signInWithGoogle } = useAuth()
+  const { user, signInWithGoogle, signOut } = useAuth()
 
   const [roomCode, setRoomCode] = useState('')
   
@@ -28,8 +28,20 @@ export function Home() {
       }
   
       history.push('/rooms/new')
+    } catch (error) {      
+      const firebaseError = error as any;
+      if (firebaseError?.code !== 'auth/popup-closed-by-user') {
+        alert('Erro ao realizar login')
+      }
+    }
+  }
+
+  async function handleSignOut() {
+    try {
+      await signOut()
+      history.push('/')
     } catch (error) {
-      alert('Erro ao realizar login')
+      alert('Não foi possível sair')
     }
   }
 
@@ -78,9 +90,13 @@ export function Home() {
             <img src={googleIconImg} alt="Logo do Google" />
             Crie sua sala com o Google
           </button>
-          {/* <button onClick={handleSignOut}> */}
-            <div className="separator">ou entre em uma sala</div>
-          {/* </button> */}
+          <button
+            className="sign-out-button"
+            onClick={handleSignOut}
+          >
+            Sair
+          </button>
+          <div className="separator">ou entre em uma sala</div>
           <form onSubmit={handleJoinRoom}>
             <input
               type="text"
