@@ -91,6 +91,27 @@
     }
   }
 
+  .sign-out-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 50px;
+    margin-top: 16px;
+    border: 1px solid #29292e;
+    border-radius: 8px;
+
+    background: #fff;
+    font-weight: 500;
+
+    cursor: pointer;
+    transition: filter 0.2s;
+
+    &:hover {
+      filter: brightness(0.9);
+    }
+  }
+
   .create-room {
     margin-top: 64px;
     height: 50px;
