@@ -34,6 +34,7 @@ O sistema foi desenvolvido em TypeScript. É composto de 2 partes:
 - Front-End Web
   - [Next](https://nextjs.org/)
   - [React](https://react.dev/)
+  - [SCSS](https://sass-lang.com/)
 
 O maior diferencial deste projeto é o uso do [Firebase](https://firebase.google.com/), um Back-End como Serviço.
 
