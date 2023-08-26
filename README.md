@@ -1,3 +1,7 @@
+<h1 align="center">
+  <img alt="A imagem contém um notebook com uma tela do site" title="Banner do projeto Let Me Ask" src="./assets/screenshots/banner.png" />
+</h1>
+
 <h4 align="center"> 
   Next Level Week #06 - Let Me Ask
 </h4>
@@ -17,6 +21,7 @@
 * [Sobre](#sobre)
   * [Tecnologias](#principais-tecnologias-utilizadas)
 * [Instalação local](#instalação-local)
+* [Créditos](#créditos)
 * [Licença](#licença)
 
 ## Sobre
@@ -41,6 +46,10 @@ O maior diferencial deste projeto é o uso do [Firebase](https://firebase.google
 ## Instalação local
 
 Passos para atingir isso podem ser conferidos <a href="./INSTALLATION.md">neste arquivo</a>.
+
+## Créditos
+
+Credito a elaboração do modelo do banner deste documento e do banner social ao autor desconhecido desta [postagem](https://mckups.com/pixel-4-and-pixelbook-go-mockup/) no site [Mckups](https://mckups.com). Foi adaptado por mim de acordo com as características deste projeto.
 
 ## Licença
 
