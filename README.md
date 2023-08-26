@@ -19,6 +19,7 @@
 
 * [Índice](#índice)
 * [Sobre](#sobre)
+  * [Conceito](#conceito)
   * [Tecnologias](#principais-tecnologias-utilizadas)
 * [Instalação local](#instalação-local)
 * [Créditos](#créditos)
@@ -29,6 +30,31 @@
 O projeto foi desenvolvido na trilha React da sexta edição do evento Next Level Week, edição também chamada de NLW Together, proporcionado pela empresa [Rocketseat](https://rocketseat.com.br/). Baseou-se em um [layout](https://www.figma.com/community/file/1009824839797878169/Letmeask) elaborado no Figma.
 
 O sistema, desenvolvido em TypeScript, é composto de um [site](https://ecoleta.marcel099.vercel.app/) em React e um Back-End como Serviço no [Firebase](https://firebase.google.com/).
+
+### Conceito
+
+O Let Me Ask é uma plataforma em que streamers podem criar salas para que o público faça perguntas e vote nas que mais achar pertinente de serem respondidas.
+
+Para poder fazer uso da plataforma, o usuário deverá fazer login utilizando uma conta do Google. Isso é necessário tanto para criar salas quanto para fazer perguntas.
+
+<div align="center">
+  <img alt="Página inicial da plataforma Let Me ask" title="Página inicial da plataforma Let Me ask" src="./assets/screenshots/home_screen.png" />
+</div>
+
+Na visualização de administrador de salas, o usuário agora poderá criar uma sala e compartilhar o código dela com os seguidores do streamer. Na página dedicada à sala, o administrador poderá destacar uma pergunta para responder, marcá-la como respondida e apagá-la. Além disso, poderá excluir a sala se assim desejar.
+
+<div align="center">
+  <img alt="Página de criação de sala" title="Página de criação de sala" src="./assets/screenshots/new_room_screen.png" />
+  <img alt="Página de administração de sala" title="Página de administração de sala" src="./assets/screenshots/admin_view_room_screen.png" />
+</div>
+
+Na visualização de participante, o usuário poderá postar perguntas e votar naquelas que desejar.
+
+<div align="center">
+  <img alt="Página de participação em sala" title="Página de participação em sala" src="./assets/screenshots/follower_view_room_screen.png" />
+</div>
+
+Em ambos os modos de visualização de sala, a lista de perguntas é atualizada em tempo real devido ao uso do [Realtime Database](https://firebase.google.com/docs/database) do [Firebase](https://firebase.google.com/).
 
 ### Principais tecnologias utilizadas
 
