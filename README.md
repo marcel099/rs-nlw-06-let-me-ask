@@ -26,7 +26,7 @@
 
 ## Sobre
 
-O projeto foi desenvolvido na trilha React da sexta edição do evento Next Level Week, edição também chamada de NLW Together, proporcionado pela empresa [Rocketseat](https://rocketseat.com.br/). Baseou-se em um layout elaborado no Figma.
+O projeto foi desenvolvido na trilha React da sexta edição do evento Next Level Week, edição também chamada de NLW Together, proporcionado pela empresa [Rocketseat](https://rocketseat.com.br/). Baseou-se em um [layout](https://www.figma.com/community/file/1009824839797878169/Letmeask) elaborado no Figma.
 
 O sistema, desenvolvido em TypeScript, é composto de um [site](https://ecoleta.marcel099.vercel.app/) em React e um Back-End como Serviço no [Firebase](https://firebase.google.com/).
 
